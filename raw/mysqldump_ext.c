@@ -214,7 +214,6 @@ PHP_FUNCTION(mysqldump_exec) {
                     } else if (strcmp(key, "skip-generated-invisible-primary-key") == 0) {
                         strcat(command, " --skip-generated-invisible-primary-key");
                     }
-                    // Continue with other boolean flags
                 }
                 // Options with values
                 else if (Z_TYPE_P(option_val) == IS_STRING || Z_TYPE_P(option_val) == IS_LONG || Z_TYPE_P(option_val) == IS_DOUBLE) {

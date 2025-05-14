@@ -1,0 +1,18 @@
+#!/bin/bash
+set -e
+
+PHP_VERSION=$(php -r 'echo PHP_MAJOR_VERSION.".".PHP_MINOR_VERSION;')
+
+if [ -f /usr/sbin/phpenmod ]; then
+    phpenmod -v $PHP_VERSION mysqldump_ext
+fi
+
+# Restart PHP-FPM if it's running
+if [ -x /usr/sbin/service ]; then
+    service_name="php$PHP_VERSION-fpm"
+    if service --status-all | grep -Fq $service_name; then
+        service $service_name restart || true
+    fi
+fi
+
+exit 0

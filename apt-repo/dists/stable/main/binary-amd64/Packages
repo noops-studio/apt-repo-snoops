@@ -1,0 +1,18 @@
+Package: php-mysqldump-ext
+Architecture: amd64
+Version: 1.0.0
+Priority: optional
+Section: web
+Maintainer: Your Name <your.email@example.com>
+Depends: php (>= 7.0), mysql-client | mariadb-client
+Filename: pool/main/php-mysqldump-ext.deb
+Size: 19970
+MD5sum: a017c9ad6cfe30b749e19fac500556a4
+SHA1: 1a132efab5ca190cd3b7ca3166bd477854987b80
+SHA256: 1ea055fc90144b67388639e759035e080eab0a1ef624e1bf9dafca9002837de3
+SHA512: 13d69df86b4fa3a6fd86dd8f21c0865ab8d03f13e641e47285fbfb2f345dfafbeb3d9c9febc24e87c25c12f711c03ae5917bcb2e5e03db60c642856ce19a8e74
+Description: PHP extension for MySQL database dumping
+ This PHP extension provides an interface to the mysqldump command
+ line tool, allowing PHP applications to create database backups
+ directly without exec() restrictions.
+

@@ -1,0 +1,10 @@
+#!/bin/bash
+set -e
+
+PHP_VERSION=$(php -r 'echo PHP_MAJOR_VERSION.".".PHP_MINOR_VERSION;')
+
+if [ -f /usr/sbin/phpdismod ]; then
+    phpdismod -v $PHP_VERSION mysqldump_ext
+fi
+
+exit 0
