@@ -1,0 +1,52 @@
+# Autotools generated files
+/autom4te.cache/
+/build/
+/config.h
+/config.h.in
+/config.h.in~
+/config.log
+/config.nice
+/config.status
+/configure
+/configure.ac
+/configure.in
+/run-tests.php
+/acinclude.m4
+/aclocal.m4
+/libtool
+
+# Compiled files
+*.lo
+*.la
+*.o
+*.so
+.libs/
+modules/
+Makefile
+Makefile.fragments
+Makefile.global
+Makefile.objects
+
+# phpize generated files
+missing
+mkinstalldirs
+
+# Temp files
+.deps
+*.dep
+*.tmp
+*~
+*.swp
+*.swo
+
+# PHP specific
+php_test_results_*.txt
+tmp-php.ini
+
+# Test related files
+tests/*.diff
+tests/*.exp
+tests/*.log
+tests/*.out
+tests/*.php
+tests/*.sh
